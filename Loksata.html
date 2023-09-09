@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loksata</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="loksata.css" />
+    <link rel="stylesheet" href="owlcarousel/css/owl.carousel.css" />
+    <link rel="stylesheet" href="owlcarousel/css/owl.theme.green.css" />
+    <script src="owlcarousel/js/jquery.min.js"></script>
+    <script src="owlcarousel/js/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header class="container overflow-hidden">
+      <div class="row row-cols-md-auto m-auto header1">
+        <div class="col col-md mt-1 d-none d-md-flex">
+          <span class="mt-0 p-1" id="loksatta-sunday"
+            >रविवार, २२ जानेवारी, २०२३</span
+          >
+        </div>
+
+        <div class="col col-md mt-1 offset-1">
+          <ul class="navbar nav mt-0 pt-0 underline d-none d-md-flex">
+            <li class="nav-item">
+              <a href="#" class="p-1"> English </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="p-1"> தமிழ் </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="p-1"> বাংলা </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="p-1">മലയാളം </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="p-1">ગુજરાતી </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="p-1">हिंदी </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="p-1 text-danger fw-bold">मराठी </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="p-1">Business </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="p-1">बिज़नेस </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="p-1">Insurance </a>
+            </li>
+          </ul>
+          <div class="img">
+            <img
+              class="img-fluid logo"
+              src="https://www.loksatta.com/wp-content/themes/ie-network-theme/assets/src/img/logo/loksatta-sunday.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="col col-md m-auto mt-1 d-none d-md-block">
+          <div class="wrap">
+            <a class="button me-2"
+              ><span class="btn-content">Follow Us</span></a
+            >
+            <img
+              class="img-fluid me-2"
+              src="https://www.loksatta.com/wp-content/themes/ie-network-theme/assets/src/img/facebook-icon.svg"
+              alt=""
+            />
+            <img
+              class="img-fluid me-2"
+              src="https://www.loksatta.com/wp-content/themes/ie-network-theme/assets/src/img/twitter-icon.svg"
+              alt=""
+            />
+          </div>
+          <div class="sign-in float-end mt-3">
+            <p class="fs-6" id="sign">
+              Sign in <i class="bi bi-person fs-4 ms-2"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- <script>
+      document.getElementById("loksatta-sunday").innerHTML =
+        "रविवार, २6 जानेवारी, २०२३";
+    </script> -->
+
+    <script>
+      var options = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      };
+      var today = new Date();
+      var showdate = today.toLocaleDateString("mr-IN", options);
+      document.getElementById("loksatta-sunday").innerHTML = showdate;
+    </script>
+
+    <section class="container-fluid overflow-hidden sticky-top">
+      <div class="row d-none d-md-flex">
+        <div class="col col-md-12 bg">
+          <ul class="d-flex justify-content-center m-auto p-3 dottedlist">
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-bars me-5 text-light"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  class="img-fluid me-3"
+                  src="https://www.loksatta.com/wp-content/themes/ie-network-theme/assets/build/src/img/home-icon.svg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="Maharashtra text-light me-3"> महाराष्ट्र </a>
+            </li>
+            <li><a href="#" class="Maharashtra text-light me-3"> शहर </a></li>
+            <li>
+              <a href="#" class="Maharashtra text-light me-3"> सत्ताकारण </a>
+            </li>
+            <li>
+              <a href="#" class="Maharashtra text-light me-3"> देश-विदेश </a>
+            </li>
+            <li>
+              <a href="#" class="Maharashtra text-light me-3"> राशीभविष्य </a>
+            </li>
+            <li>
+              <a href="#" class="Maharashtra text-light me-3"> मनोरंजन </a>
+            </li>
+            <li>
+              <a href="#" class="Maharashtra text-light me-3"> ट्रेंडिंग </a>
+            </li>
+            <li>
+              <a href="#" class="Maharashtra text-light me-3"> क्रीडा </a>
+            </li>
+            <li>
+              <a href="#" class="Maharashtra text-light me-3"> अर्थभान </a>
+            </li>
+            <li><a href="#" class="Maharashtra text-light me-3"> चतुरा </a></li>
+            <li>
+              <a href="#" class="Maharashtra text-light me-3"> विचारमंच </a>
+            </li>
+            <li>
+              <a href="#" class="Maharashtra text-light me-3"> विश्लेषण </a>
+            </li>
+            <li><a href="#" class="Maharashtra text-light me-3"> फोटो </a></li>
+            <li>
+              <a href="#" class="Maharashtra text-light me-3"> व्हिडिओ </a>
+            </li>
+            <li>
+              <a href="#" class="Maharashtra text-light me-3"> वेब स्टोरीज </a>
+            </li>
+            <li>
+              <a href="#" class="Maharashtra text-light me-3 position-relative">
+                ईपेपर
+                <span
+                  class="badge bg-secondary position-absolute top-7 start-100 translate-middle badge rounded-pill bg-danger"
+                  >NEW</span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-magnifying-glass ms-4 text-light"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid overflow-hidden m-0 p-0">
+      <div class="row">
+        <div class="col col-md-10 m-auto">
+          <ul class="d-flex justify-content-center dottedlist mt-2">
+            <li id="menu-item">
+              <a
+                href="#"
+                class="Maharashtra text-danger me-4 d-none d-md-block"
+              >
+                ट्रेंडिंग
+              </a>
+            </li>
+            <button
+              class="btn btn-outline-secondary rounded-pill rounded-pill2 ms-0 p-0 fs-6 fw-normal me-2 text-black"
+            >
+              नरेंद्र मोदी
+            </button>
+            <button
+              class="btn btn-outline-secondary rounded-pill rounded-pill2 ms-0 p-0 P-1 fs-6 fw-normal me-2 text-black"
+            >
+              एकनाथ शिंदे
+            </button>
+            <button
+              class="btn btn-outline-secondary rounded-pill rounded-pill2 ms-0 p-0 P-1 fs-6 fw-normal me-2 text-black"
+            >
+              देवेंद्र फडणवीस
+            </button>
+            <button
+              class="btn btn-outline-secondary rounded-pill rounded-pill2 ms-0 p-0 P-1 fs-6 fw-normal me-2 text-black"
+            >
+              राज ठाकरे
+            </button>
+            <button
+              class="btn btn-outline-secondary rounded-pill rounded-pill2 ms-0 p-0 P-1 fs-6 fw-normal me-2 text-black"
+            >
+              संजय राऊत
+            </button>
+            <button
+              class="btn btn-outline-secondary rounded-pill rounded-pill2 ms-0 p-0 P-1 fs-6 fw-normal me-2 text-black d-none d-md-block"
+            >
+              Auto Expo 2023
+            </button>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container overflow-hidden">
+      <div class="row">
+        <div class="col col-md-12">
+          <h5 class="text-center ads mt-2">ADVERTISEMENT</h5>
+          <img class="img-fluid flatad" src="assets/ad1.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5 overflow-hidden">
+      <div class="row">
+        <div class="col col-md-12">
+          <div
+            class="alert alert-danger alert-dismissible fade show text-light"
+            role="alert"
+          >
+            <marquee behavior="" direction="vertical">
+              <strong class="border-right me-5">आवर्जून वाचा - </strong>
+              “निवडणूक जिंकायची असेल तर बाळासाहेबांशिवाय पर्याय नाही हे
+              मोदींनाही…. हिंमत असेल तर..” उद्धव ठाकरेंचं आव्हान
+            </marquee>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End -->
+
+    <div class="container overflow-hidden">
+      <div class="row gx-5">
+        <div class="col col-md-5 position-relative">
+          <div class="news-img">
+            <img
+              class="img-fluid gradient"
+              src="https://www.loksatta.com/wp-content/uploads/2023/01/New-Project-2023-01-24T145636.190.jpg"
+              alt=""
+            />
+          </div>
+          <div class="devendra-content position-absolute">
+            <span
+              class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger offset-1"
+              >महाराष्ट्र</span
+            >
+
+            <p class="text-light fw-bold fs-5 ms-1 mt-3 hov-red">
+              देवेंद्र फडणवीसांच्या आरोपाचं तत्कालीन गृहमंत्र्यांकडून खंडण;
+              म्हणाले, “त्यांनी केलेले आरोप…”
+            </p>
+          </div>
+          <hr />
+          <div class="mt-2 d-flex">
+            <p class="fs-6 fw-bold d-flex hov-red">
+              “२०२४ मध्ये अनेक मोठे धक्के,” देवेंद्र फडणवीसांच्या विधानावर जयंत
+              पाटलांचे उत्तर; म्हणाले, “लोक फार हुशार…”
+            </p>
+            <div class="sub-img">
+              <img
+                class="side-img"
+                src="https://www.loksatta.com/wp-content/uploads/2023/01/jayant-patil-and-devendra-fadnavis-1.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <hr />
+          <div class="mt-2 d-flex">
+            <p class="fs-6 fw-bold d-flex hov-red">
+              “मला अटक केली गेली कारण महाराष्ट्रात सत्तांतर होताना….” संजय राऊत
+              यांचा गौप्यस्फोट
+            </p>
+            <div class="sub-img">
+              <img
+                class="side-img"
+                src="https://www.loksatta.com/wp-content/uploads/2023/01/Raut-and-Shinde-Fadnavis.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <hr />
+          <div class="mt-2 d-flex">
+            <p class="fs-6 fw-bold d-flex hov-red">
+              “आम्हाला सर्व कम्युनिस्ट नेत्यांचा नायनाट करायचा आहे”, भाजपा
+              नेत्याचे वादग्रस्त वक्तव्य
+            </p>
+            <div class="sub-img">
+              <img
+                class="side-img"
+                src="https://www.loksatta.com/wp-content/uploads/2023/01/Dr-Ashok-Sinha-BJP-leader.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <hr />
+          <div class="mt-2 d-flex">
+            <p class="fs-6 fw-bold d-flex hov-red">
+              पुढचा मुख्यमंत्री कोण होणार? थेट प्रश्नावर जयंत पाटलांची तुफान
+              टोलेबाजी, सुधीर मुनगंटीवारांकडे बोट दाखवत म्हणाले “फडणवीसांना…”
+            </p>
+            <div class="sub-img">
+              <img
+                class="side-img"
+                src="https://www.loksatta.com/wp-content/uploads/2023/01/JAYANT-PATIL-AND-DEVENDRA-FADNAVIS-2.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <hr class="fs-2 text-danger fw-bold" />
+          <div class="mt-2 d-flex">
+            <p class="fs-6 fw-bold d-flex hov-red">
+              विश्लेषण: चार्ल्स यांनी फसवल्यानंतर डायनाने घातलेल्या ‘त्या’
+              ड्रेसला Revenge Dress का म्हटलं गेलं?
+            </p>
+            <div class="sub-img">
+              <img
+                class="side-img"
+                src="https://www.loksatta.com/wp-content/uploads/2023/01/Diana-1.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-md-3 d-none d-md-block">
+          <h6 class="text-danger">
+            LIVE |
+            <span class="text-black fs-6 fw-light ms-2">26 mins ago</span>
+          </h6>
+
+          <div class="d-flex d-block d-md-block">
+            <p class="fs-6 fw-bold d-flex m-0 p-0 hov-red">
+              Maharashtra Breaking News Live : “जगातील सर्वात मोठ्या पक्षाला
+              नाशिकमध्ये…”, नाना पटोलेंचा भाजपाला प्रश्न
+            </p>
+          </div>
+          <hr />
+          <div class="d-flex">
+            <p class="fs-6 fw-bold d-flex p-0 m-0 hov-red">
+              “प्रकाश आंबेडकर सातत्याने अकोल्यातून निवडणूक हरले, आता त्यांना…”,
+              फडणवीसांनी सांगितलं युतीचं कारण
+            </p>
+          </div>
+          <hr />
+          <div class="d-flex">
+            <p class="fs-6 fw-bold d-flex m-0 p-0 hov-red">
+              “उमेदवारीवरून राजकारण परिवाराला अडचणीत आणण्यासाठीच”, सत्यजीत तांबे
+              यांचा आरोप; म्हणाले, “काँग्रेसकडे उमेदवारी..”
+            </p>
+          </div>
+          <hr />
+          <div class="d-flex">
+            <p class="fs-6 fw-bold d-flex m-0 p-0 hov-red">
+              शेजारच्या पुरुषांचे शब्द जिव्हारी लागले, महिलेने उचललं टोकाचं
+              पाऊल, पतीला अखेरचा फोन करत म्हणाली “आपल्या मुलींची…”
+            </p>
+          </div>
+          <hr />
+          <div class="d-flex">
+            <p class="fs-6 fw-bold d-flex m-0 p-0 hov-red">
+              “आम्हाला सर्व कम्युनिस्ट नेत्यांचा नायनाट करायचा आहे”, भाजपा
+              नेत्याचे वादग्रस्त वक्तव्य
+            </p>
+          </div>
+          <hr />
+          <div class="d-flex">
+            <p class="fs-6 fw-bold d-flex m-0 p-0 hov-red">
+              क्वीन इज बॅक! कंगना रणौतला परत मिळालं तिचं ट्विटर अकाउंट, पहिलं
+              ट्वीट करत म्हणाली…
+            </p>
+          </div>
+          <hr />
+          <div class="d-flex">
+            <p class="fs-6 fw-bold d-flex m-0 p-0 hov-red">
+              बीडमध्ये ४०० स्क्रीन तर सांगलीत चाहत्यांनी केलं संपूर्ण थिएटरचं
+              बुकिंग; शाहरुख खानच्या ‘पठाण’ची महाराष्ट्रात क्रेझ
+            </p>
+          </div>
+          <hr />
+          <div class="d-flex">
+            <p class="fs-6 fw-bold d-flex m-0 p-0 hov-red">
+              “मनसेचे १३ आमदार हे काही सोरटवर निवडून आले नव्हते” राज ठाकरेंची
+              मिश्किल टोलेबाजी
+            </p>
+          </div>
+          <hr />
+        </div>
+        <div class="col col-md-4">
+          <h6 class="text-center ads">ADVERTISEMENT</h6>
+
+          <img
+            class="img-fluid"
+            src="https://pix.as.criteo.net/img/img?m=0&partner=93439&q=80&r=0&u=http%3A%2F%2Fstatic.sg1.as.criteo.net%2Fdesign%2Fdt%2F93439%2F220705%2F7efd602bc5fc4555aab19ebc111818f8_all-in-one-mid-income-banners-v1-1200x628.jpg&v=3&s=dnV3WDYX3wnIBL22cvfBGrQb"
+            alt=""
+          />
+
+          <div class="owl mt-5">
+            <div class="owl-carousel owl-theme मनोरंजन">
+              <div class="first-item m-auto">
+                <h5 class="text-light p-4 fs-4 fw-bold">मनोरंजन</h5>
+                <img
+                  class="img-fluid p-4"
+                  src="https://www.loksatta.com/wp-content/uploads/2023/01/kangana-twitter.jpg?resize=650,362"
+                  alt=""
+                />
+                <p class="text-light mx-4">
+                  नाशिक : प्रशांत दामले यांना ‘दि न्यू एज्युकेशन इन्स्टिट्यूट’चा
+                  अक्षय्य पुरस्कार kangana twitter क्वीन इज बॅक! कंगना रणौतला
+                  परत मिळालं तिचं ट्विटर अकाउंट, पहिलं ट्वीट करत म्हणाली…
+                </p>
+              </div>
+              <div class="first-item m-auto">
+                <h5 class="text-light p-4 m-auto fs-4 fw-bold">मनोरंजन</h5>
+                <img
+                  class="img-fluid p-4"
+                  src="https://www.loksatta.com/wp-content/uploads/2023/01/RRR-OSCAR-NOMINATION.jpeg?resize=650,362"
+                  alt=""
+                />
+                <p class="text-light mx-4">
+                  RRR OSCAR NOMINATION Oscar Nomintaions 2023 : ‘RRR’ मधील ‘नाटू
+                  नाटू’ गाण्याची ऑस्करमध्ये अधिकृत एंट्री; बेस्ट ओरिजनल साँग
+                  कॅटेगरीत...
+                </p>
+              </div>
+              <div class="first-item m-auto">
+                <h5 class="text-light p-4 m-auto fs-4 fw-bold">मनोरंजन</h5>
+                <img
+                  class="img-fluid p-4"
+                  src="https://www.loksatta.com/wp-content/uploads/2023/01/rajkumar-santoshi-about-nathuram-godse.jpg?resize=650,362"
+                  alt=""
+                />
+                <p class="text-light mx-4">
+                  “गोडसेचा आवाज दाबण्यात आला आणि…” राजकुमार संतोषी यांनी
+                  सांगितला ‘गांधी गोडसे’ चित्रपटामागचा खरा हेतू
+                </p>
+              </div>
+              <div class="first-item m-auto">
+                <h5 class="text-light p-4 m-auto fs-4 fw-bold">मनोरंजन</h5>
+                <img
+                  class="img-fluid p-4"
+                  src="https://www.loksatta.com/wp-content/uploads/2023/01/madhurani-prabhulkar.jpg?resize=650,362"
+                  alt=""
+                />
+                <p class="text-light mx-4">
+                  “लहानपणापासून मला…” ‘आई कुठे काय करते’मधील अरुंधतीची ‘ती’
+                  पोस्ट चर्चेत
+                </p>
+              </div>
+              <div class="first-item m-auto">
+                <h5 class="text-light p-4 m-auto fs-4 fw-bold">मनोरंजन</h5>
+                <img
+                  class="img-fluid p-4"
+                  src="https://www.loksatta.com/wp-content/uploads/2023/01/pathan-srk.jpeg?resize=650,362"
+                  alt=""
+                />
+                <p class="text-light mx-4">
+                  ‘पठाण’च्या वेळी ‘जवान’चा टीझर पाहायला मिळणार का? चाहत्याच्या
+                  प्रश्नावर शाहरुख म्हणाला…
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex mt-4">
+            <p class="fs-6 fw-bold d-flex m-0 p-0 hov-red">
+              ‘वेड’ ठरला सुपरहिट पण पुनरागमन करताना जिनिलीयाला आलं होतं दडपण,
+              म्हणाली…
+            </p>
+          </div>
+          <hr />
+          <div class="d-flex mt-4">
+            <p class="fs-6 fw-bold d-flex m-0 p-0 hov-red">
+              “मनसेचे १३ आमदार हे काही सोरटवर निवडून आले नव्हते” राज ठाकरेंची
+              मिश्किल टोलेबाजी
+            </p>
+          </div>
+          <hr />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 6,
+          margin: 20,
+          loop: true,
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 2000,
+          video: true,
+          // stagePadding: 50,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+        });
+      });
+    </script>
+
+    <!-- End -->
+
+    <div class="container mt-4 blackline">
+      <div class="row d-block d-md-flex">
+        <h4 class="fw-bold red-alert">ताज्या बातम्या</h4>
+        <div class="col col-md-4">
+          <div class="mt-2 d-flex">
+            <p class="fs-6 fw-bold d-flex hov-red">
+              बुलढाणा : घोड्यांच्या त्रासापासून वाचवा हो..! त्रस्त नागरिकांसह
+              शेतकऱ्यांचे महामार्गावर ‘चक्काजाम’
+            </p>
+            <div class="sub-img">
+              <img
+                class="side-img"
+                src="https://www.loksatta.com/wp-content/uploads/2023/01/WhatsApp-Image-2023-01-24-at-5.01.31-PM.jpeg?resize=310,174"
+                alt=""
+              />
+            </div>
+          </div>
+          <hr />
+          <div class="mt-2 d-flex">
+            <p class="fs-6 fw-bold d-flex hov-red">
+              विश्लेषण : बँक लॉकर करारांसंबंधीची मुदत RBI ने का वाढवली आहे?
+            </p>
+            <div class="sub-img">
+              <img
+                class="side-img"
+                src="https://www.loksatta.com/wp-content/uploads/2023/01/Bank-Locker.jpeg?resize=310,174"
+                alt=""
+              />
+            </div>
+          </div>
+          <hr />
+          <div class="mt-2 d-flex">
+            <p class="fs-6 fw-bold d-flex hov-red">
+              ठाणे : मोबाईल चोरला पण आरोपी दुचाकीवरून पडला, पोलिसांच्या ताब्यात
+              येताच मोठी टोळी गजाआड, २० महागडे मोबाईल जप्त
+            </p>
+            <div class="sub-img">
+              <img
+                class="side-img"
+                src="https://www.loksatta.com/wp-content/uploads/2023/01/crime-3.webp?resize=310,174"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-md-4">
+          <div class="mt-2 d-flex">
+            <p class="fs-6 fw-bold d-flex hov-red">
+              पुणे : कसबा विधानसभा पोटनिवडणुकीसाठी भाजपाला मनसेची साथ?
+            </p>
+            <div class="sub-img">
+              <img
+                class="side-img"
+                src="https://www.loksatta.com/wp-content/uploads/2023/01/New-Project-2023-01-24T222455.473.jpg?resize=310,174"
+                alt=""
+              />
+            </div>
+          </div>
+          <hr />
+          <div class="mt-2 d-flex">
+            <p class="fs-6 fw-bold d-flex hov-red">
+              IND vs NZ 3rd ODI: डेव्हॉन कॉन्वेचा चौकार-षटकारांचा पाऊस;
+              भारताविरुद्ध ‘ही’ कामगिरी करणारा ठरला दुसरा किवी फलंदाज
+            </p>
+            <div class="sub-img">
+              <img
+                class="side-img"
+                src="https://www.loksatta.com/wp-content/uploads/2023/01/image-8-2.jpg?resize=310,174"
+                alt=""
+              />
+            </div>
+          </div>
+          <hr />
+          <div class="mt-2 d-flex">
+            <p class="fs-6 fw-bold d-flex hov-red">
+              ठाणे : कल्याण-डोंबिवली परिसरातून १३ दुचाकी चोरणाऱ्याला भिवंडीतून
+              अटक, कल्याण गुन्हे शाखेची कारवाई
+            </p>
+            <div class="sub-img">
+              <img
+                class="side-img"
+                src="https://www.loksatta.com/wp-content/uploads/2023/01/New-Project-2023-01-24T212717.386.jpg?resize=310,174"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-md-4">
+          <div class="mt-2 d-flex">
+            <p class="fs-6 fw-bold d-flex hov-red">
+              “क्लस्टरचा फास गळ्याशी आणून नगरसेवकांना आपल्या पक्षात ओढण्याचा
+              प्रयत्न”, जितेंद्र आव्हाडांचा गंभीर आरोप
+            </p>
+            <div class="sub-img">
+              <img
+                class="side-img"
+                src="https://www.loksatta.com/wp-content/uploads/2023/01/Jitendra-Awhad-Eknath-Shinde.jpg?resize=310,174"
+                alt=""
+              />
+            </div>
+          </div>
+          <hr />
+          <div class="mt-2 d-flex">
+            <p class="fs-6 fw-bold d-flex hov-red">
+              ठाणे : कोपरी उड्डाणपुलाच्या डांबरीकरणासाठी मध्यरात्री वाहतूक बदल
+            </p>
+            <div class="sub-img">
+              <img
+                class="side-img"
+                src="https://www.loksatta.com/wp-content/uploads/2023/01/New-Project-2022-11-16T152322.463.jpg?resize=310,174"
+                alt=""
+              />
+            </div>
+          </div>
+          <hr />
+          <div class="mt-2 d-flex">
+            <p class="fs-6 fw-bold d-flex hov-red">
+              केळी, बदाम की मनुका तुम्हाला रोज सकाळी रिकाम्या पोटी काय खाल्ले
+              पाहिजे? डॉक्टरांकडून जाणून घ्या
+            </p>
+            <div class="sub-img">
+              <img
+                class="side-img"
+                src="https://www.loksatta.com/wp-content/uploads/2023/01/New-Project-2023-01-24T205315.051.jpg?resize=310,174"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-grid col-10 mx-auto p-2">
+      <button class="btn bg-light" type="button">
+        आणखी वाचा
+        <span
+          ><i class="fa-solid fa-arrow-right ms-2 text-danger hov-arr"></i
+        ></span>
+      </button>
+    </div>
+
+    <div class="luck-ads mt-2">
+      <img
+        class="img-fluid mx-auto d-flex"
+        src="https://www.loksatta.com/wp-content/uploads/2023/01/Astro_Banner_970_x_90.jpg"
+        alt=""
+      />
+    </div>
+
+    <div class="container मनोरंजन my-5">
+      <div class="row d-block d-md-flex px-5">
+        <h4 class="fw-bold mt-4 text-light d-flex d-md-flex text-center">
+          फोटो गॅलरी
+          <span>
+            <button
+              class="ms-4 btn rounded-pill rounded-pill2 ms-0 p-0 fs-6 fw-normal text-black bg-light फोटो-गॅलरी"
+            >
+              आजचे फोटो
+            </button>
+            <button
+              class="btn rounded-pill rounded-pill2 ms-0 p-0 fs-6 fw-normal text-black bg-light फोटो-गॅलरी"
+            >
+              बातम्या
+            </button>
+            <button
+              class="btn rounded-pill rounded-pill2 ms-0 p-0 fs-6 fw-normal text-black bg-light फोटो-गॅलरी"
+            >
+              मनोरंजन
+            </button>
+            <button
+              class="btn rounded-pill rounded-pill2 ms-0 p-0 fs-6 fw-normal text-black bg-light फोटो-गॅलरी"
+            >
+              लाइफस्टाइल
+            </button>
+            <button
+              class="btn rounded-pill rounded-pill2 ms-0 p-0 fs-6 fw-normal text-black bg-light फोटो-गॅलरी"
+            >
+              ट्रेंडिंग
+            </button>
+            <button
+              class="btn rounded-pill rounded-pill2 ms-0 p-0 fs-6 fw-normal text-black bg-light फोटो-गॅलरी"
+            >
+              क्रीडा
+            </button>
+          </span>
+        </h4>
+
+        <div class="col col-md-3">
+          <img
+            class="img-fluid p-2"
+            src="https://www.loksatta.com/wp-content/uploads/2023/01/tooth-health-1.jpg?resize=310,174"
+            alt=""
+          />
+          <p class="text-light text-center fw-bold red-alert">
+            Oral Health: दैनंदिन जीवनातील ‘या’ सवयींमुळे बिघडते दातांचे आरोग्य;
+            आजच करा बदल
+          </p>
+          <button
+            class="btn btn-outline-danger bg-danger rounded-pill rounded-pill2 ms-5 p-0 fs-6 fw-normal text-light mb-2"
+          >
+            VIEW · 9 PICS
+          </button>
+        </div>
+        <div class="col col-md-3">
+          <img
+            class="img-fluid p-2"
+            src="https://www.loksatta.com/wp-content/uploads/2023/01/Jaya-kishor-and-dhirendra-shastri-feature-image.jpg?resize=310,174"
+            alt=""
+          />
+          <p class="text-light text-center fw-bold red-alert">
+            Photos: धीरेंद्र कृष्ण शास्त्री महाराज आणि कथावाचक जया किशोरी लग्न
+            करणार? धीरेंद्र शास्त्री म्हणाले…
+          </p>
+          <button
+            class="btn btn-outline-danger bg-danger rounded-pill rounded-pill2 ms-5 p-0 fs-6 fw-normal text-light mb-2"
+          >
+            VIEW · 9 PICS
+          </button>
+        </div>
+        <div class="col col-md-3">
+          <img
+            class="img-fluid p-2"
+            src="https://www.loksatta.com/wp-content/uploads/2023/01/%E0%A4%B0%E0%A4%BE%E0%A4%B6%E0%A5%80-4.jpeg?resize=310,174"
+            alt=""
+          />
+          <p class="text-light text-center fw-bold red-alert">
+            ७ फेब्रुवारीला ‘भद्रा राजयोग’ घडल्याने ‘या’ राशी होऊ शकतात मालामाल,
+            बुधदेवाच्या कृपेने वर्षभर
+          </p>
+          <button
+            class="btn btn-outline-danger bg-danger rounded-pill rounded-pill2 ms-5 p-0 fs-6 fw-normal text-light mb-2"
+          >
+            VIEW · 9 PICS
+          </button>
+        </div>
+        <div class="col col-md-3">
+          <img
+            class="img-fluid p-2"
+            src="https://www.loksatta.com/wp-content/uploads/2023/01/Devendra-Fadnavis-10.jpg?resize=310,174"
+            alt=""
+          />
+          <p class="text-light text-center fw-bold red-alert">
+            ‘प्लॅन A’ अजित पवार, ‘प्लॅन B’ एकनाथ शिंदे, ‘प्लॅन C’ अशोक चव्हाण?
+            फडणवीस म्हणाले…
+          </p>
+          <button
+            class="btn btn-outline-danger bg-danger rounded-pill rounded-pill2 ms-5 p-0 fs-6 fw-normal text-light mb-2"
+          >
+            VIEW · 9 PICS
+          </button>
+        </div>
+        <div class="d-grid col-10 mx-auto p-2">
+          <button class="btn text-light" type="button">
+            आणखी पाहा
+            <span
+              ><i class="fa-solid fa-arrow-right ms-2 text-danger hov-arr"></i
+            ></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section class="container-fluid blacklives">
+      <div class="container">
+        <div class="row">
+          <h4 class="text-secondary border-bottom py-2">Top Category</h4>
+          <div class="col col-md-12">
+            <ul class="footli header1">
+              <li>देश-विदेश</li>
+              <li>मनोरंजन</li>
+              <li>क्रीडा</li>
+              <li>अर्थसत्ता</li>
+              <li>मुंबई</li>
+              <li>महाराष्ट्र</li>
+              <li>वृत्तान्त</li>
+              <li>पुणे</li>
+              <li>ठाणे</li>
+              <li>नागपूर/ विदर्भ</li>
+              <li>निवडणूक २०२२</li>
+              <li>ट्रेंडिंग</li>
+              <li>तंत्रज्ञान</li>
+              <li>तंत्रज्ञान</li>
+              <li>राशी</li>
+              <li>वृत्त</li>
+              <li>लाइफस्टाइल</li>
+              <li>ऑटो</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-md-12">
+            <h4 class="text-secondary border-bottom py-2">Trending Topics</h4>
+            <ul class="maha text-white">
+              <li>Maharashtra Corona Update</li>
+              <li>Agnipath Scheme</li>
+              <li>Maharashtra Latest News</li>
+              <li>Maharashtra News Live</li>
+              <li>महाराष्ट्र बातम्या</li>
+              <li>देवेंद्र फडणवीस</li>
+              <li>एकनाथ शिंदे</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row d-none d-md-flex">
+          <div class="col col-md-12">
+            <h4 class="text-secondary border-bottom">Trending Stories</h4>
+            <ul class="stories text-white">
+              <li>
+                “आत्ता निवडणूक आयोगाने कुठलाही निर्णय देऊ नये, कारण १६ आमदार…”,
+                कायदेतज्ज्ञ उल्हास बापटांचं महत्त्वाचं विधान
+              </li>
+              <li>
+                “पंजाबचा कारभार दिल्लीच्या रिमोटने चालवू नका” म्हणणाऱ्या राहुल
+                गांधींना भगवंत मान यांचं प्रत्युत्तर, म्हणाले…
+              </li>
+              <li>
+                विश्लेषण : मुस्लीम मुली वयात आल्यानंतर आवडत्या व्यक्तीशी विवाह
+                करू शकतात का?
+              </li>
+              <li>
+                Video : राहुल गांधींच्या सुरक्षेत पुन्हा हलगर्जीपणा? पंजाबमध्ये
+                तरुण थेट जवळ आला अन्…
+              </li>
+              <li>
+                Photos: शाहरुख खानचा ‘पठाण’ बॉक्स ऑफिसवर दाखवणार का आपली जादू?
+                ‘या’ चित्रपटांनी परदेशात केली विक्रमी कमाई
+              </li>
+              <li>
+                “महाराष्ट्र केसरीची कुस्ती माझ्या सिकंदरनेच मारली होती, पण…”,
+                सिकंदर शेखच्या वडीलांना अश्रू अनावर
+              </li>
+              <li>
+                Babar Azam Leaked Video: “बाबर आझमने मला प्रेग्नेंट केले अन्…”,
+                महिलेने PCBकडे केली कडक कारवाईची मागणी
+              </li>
+              <li>
+                Maharashtra News : पुन्हा तारीख पे तारीख! शिवसेना पक्षनाव अन्
+                धनुष्यबाण चिन्हासंदर्भात पुढील सुनावणी २० जानेवारीला
+              </li>
+              <li>
+                १३ मार्चपर्यंत ‘या’ राशी होतील अपार श्रीमंत? ५६ दिवस ‘या’ रूपात
+                मंगळ देऊ शकतो बक्कळ धनलाभ
+              </li>
+              <li>
+                घरबसल्या मोबाईलवर मिळवा डिजिटल वोटर आयडी; कसे डाउनलोड करायचे
+                जाणून घ्या
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row border-bottom">
+          <div class="col col-md-12">
+            <h4 class="text-secondary border-bottom py-2">Indian Express</h4>
+            <ul class="stories text-white">
+              <li>
+                Adani Group Cos Shares Fall After Report Alleges 'Stock
+                Manipulation'
+              </li>
+              <li>
+                Never Out Of His Father’s Shadow, Anil Antony Failed To Make
+                Headway In Congress
+              </li>
+              <li>
+                Dozen Students Detained After Bid To Screen Modi Docu At Jamia
+                Campus
+              </li>
+              <li>
+                What Is Hindenburg Research, The Firm That Has Accused Adani
+                Group Of Stock Manipulation?
+              </li>
+              <li>
+                Pathaan Review: SRK And Bollywood Are Back With This Patriotic
+                Spy Thriller
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row text-white my-3 py-3">
+          <div class="col col-md-3 border-end">
+            <p>Follow US</p>
+            <p>Download App</p>
+          </div>
+          <div class="col col-md-3">
+            <ul class="footerlist">
+              EXPRESS GROUP
+              <li>The Indian Express</li>
+              <li>The Financial Express</li>
+              <li>Jansatta</li>
+              <li>IeTamil.Com</li>
+              <li>IeMalayalam.Com</li>
+              <li>IeBangla.Com</li>
+            </ul>
+          </div>
+          <div class="col col-md-3 border-end">
+            <ul class="footerlist">
+              <li><br /></li>
+              <li>IeGujarati.Com</li>
+              <li>InUth</li>
+              <li>The ExpressGroup</li>
+              <li>MyInsuranceClub</li>
+              <li>Ramnath Goenka Awards</li>
+              <li>Compare Term Insurance</li>
+            </ul>
+          </div>
+          <div class="col col-md-3">
+            <ul class="footerlist">
+              QUICK LINKS
+              <li>T&C</li>
+              <li>Privacy Policy</li>
+              <li>Indian Express Group</li>
+              <li>Advertise With Us</li>
+              <li>संपर्क</li>
+              <li>This Website Follows The DNPA’s Code Of Conduct</li>
+            </ul>
+          </div>
+          <div class="row d-md-block border-top">
+            <span
+              >Copyright © 2023 The Indian Express [P] ltd. All Rights
+              Reserved.</span
+            >
+            <img
+              class="img-fluid footimg float-end"
+              src="https://www.loksatta.com/wp-content/themes/ie-network-theme/assets/src/img/vip-powered-logo.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer End -->
+    <script
+      src="https://kit.fontawesome.com/9df9452641.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

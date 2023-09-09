@@ -1,0 +1,196 @@
+.header1 li + li::before {
+  content: "|";
+  padding: 2px;
+}
+
+.underline a {
+  text-decoration: none;
+}
+
+.p-1 {
+  font-size: 13px;
+  color: black;
+}
+
+.button {
+  border-radius: 0.875rem;
+  display: inline-block;
+  border: 2px solid transparent;
+  background: linear-gradient(45deg, red, #00f);
+}
+
+.btn-content {
+  background: #fff;
+  border-radius: 0.8125rem;
+  padding: 0.412rem 1.2rem 0.15rem;
+  display: inline-block;
+  color: #4c8bf5;
+  font-weight: 600;
+  margin: auto;
+  cursor: pointer;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 218px;
+  height: 69px;
+}
+
+.Maharashtra {
+  text-decoration: none;
+  font-size: small;
+  font-weight: bold;
+}
+
+.dottedlist {
+  list-style-type: none;
+}
+
+.bg {
+  background-color: #0a112d;
+}
+
+.rounded-pill2 {
+  width: 120px;
+}
+
+@media (max-width: 768px) {
+  .rounded-pill2 {
+    width: auto;
+  }
+
+  .btn-outline-secondary {
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+    font-size: 15px !important;
+  }
+}
+
+.alert-danger {
+  background-color: #ee1e1e;
+}
+
+.devendra-content {
+  top: 200px;
+  cursor: pointer;
+}
+
+.side-img {
+  width: 140px !important;
+  height: 120px !important;
+}
+
+.ads {
+  font-size: 10px;
+  font-weight: light;
+  color: gray;
+}
+
+.मनोरंजन {
+  background-color: #0a112d;
+}
+
+.flatad {
+  width: 100%;
+}
+
+.gradient::before {
+  content: "";
+  display: block;
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 64%
+  ) !important;
+  border-radius: 5px;
+  /* transition: 0.5s all linear; */
+  z-index: 5;
+}
+
+.blackline::after {
+  content: " ";
+  width: 50%;
+  height: 10px;
+  color: black;
+  display: flex;
+}
+
+.hov-red:hover {
+  color: red;
+}
+
+.btn:hover .hov-arr {
+  transition: 0.3s ease-out;
+  text-align: center;
+  translate: 5px;
+}
+
+.फोटो-गॅलरी:hover {
+  background-color: red !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+
+.red-alert:hover {
+  color: red !important;
+}
+
+/* //footer */
+
+.footli {
+  list-style: none;
+  display: inline-block;
+  color: #fff;
+}
+.footli li {
+  margin-top: 0;
+  float: left;
+  padding-right: 5px;
+}
+.maha {
+  list-style: none;
+  display: flex;
+  margin-top: -1.125rem;
+  flex-wrap: wrap;
+}
+.maha li {
+  width: 25%;
+  height: 50px;
+  margin-top: 1.25rem;
+  padding-right: 0.625rem;
+  line-height: 1.25rem;
+}
+.stories {
+  list-style: none;
+  display: flex;
+  margin-top: -1.125rem;
+  flex-wrap: wrap;
+}
+.stories li {
+  width: 25%;
+  height: 80px;
+  margin-top: 1.25rem;
+  padding-right: 0.625rem;
+  line-height: 1.25rem;
+}
+.footerlist {
+  list-style-type: none;
+}
+.footimg {
+  height: 2rem;
+  width: 10rem;
+}
+
+.blacklives {
+  background-color: black;
+}
